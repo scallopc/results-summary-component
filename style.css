@@ -10,3 +10,8 @@
   display: flex;
   gap: 10px;
 }
+
+.main .results {
+  background-color: antiquewhite;
+  border-radius: 20px;
+}
