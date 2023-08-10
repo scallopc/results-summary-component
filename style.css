@@ -24,13 +24,13 @@
 }
 
 .main {
-  border: 1px solid;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   border-radius: 20px;
   background-color: hsl(0, 0%, 100%);
+  box-shadow: -2px 12px 20px 8px hsl(213.23deg 37.28% 39.68% / 24%);
 }
 
 .results {
@@ -39,13 +39,15 @@
   padding: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  width: 250px;
+  height: 370px;
 }
 
 span {
   font-size: 18px;
+  font-weight: 700;
 }
 
 .title-result {
@@ -56,12 +58,20 @@ span {
   color: hsl(0, 0%, 100%);
   font-size: 12px;
   font-weight: 300;
+  max-width: 162px;
+  text-align: center;
 }
 
 .number-content {
   font-size: 50px;
   color: hsl(0, 0%, 100%);
   font-weight: 800;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 14px;
+  text-align: center;
+  width: 120px;
+  height: 120px;
 }
 
 .number-content p {
@@ -76,8 +86,72 @@ span {
 .summary {
   display: flex;
   flex-direction: column;
-  background-color: hsl(221, 100%, 96%);
+  padding: 25px;
+  gap: 20px;
   border-radius: 20px;
+  width: 250px;
+  height: 370px;
+}
+
+.summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.summary-react {
+  display: flex;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.scope {
+  display: flex;
+  gap: 5px;
+}
+
+.range {
+  color: hsl(224, 30%, 27%);
+}
+
+.total {
+  color: hsl(0deg 0% 65.5%);
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(0deg 100% 67% / 6%);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39deg 100% 56% / 6%);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166deg 100% 37% / 6%);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234deg 85% 45% / 6%);
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
 }
 
 .attribution {
